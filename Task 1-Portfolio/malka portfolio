@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+
+<style>
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+    color:#333;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+}
+
+/* Header */
+header{
+    background:#333;
+    color:white;
+    padding:50px 0;
+    text-align:center;
+}
+
+header h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* About Section */
+#about{
+    background:white;
+    padding:60px 0;
+}
+
+#about .about-content{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+#about img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #333;
+}
+
+.about-text{
+    max-width:600px;
+}
+
+.about-text h2{
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+/* Skills Section */
+#skills{
+    background:#e2e2e2;
+    padding:60px 0;
+    text-align:center;
+}
+
+#skills h2{
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+.skills-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.skills-list li{
+    list-style:none;
+    background:#333;
+    color:white;
+    padding:12px 20px;
+    border-radius:5px;
+    font-size:18px;
+}
+
+/* Education Section */
+#education{
+    background:white;
+    padding:60px 0;
+    text-align:center;
+}
+
+#education h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    background:#f4f4f4;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Resume Section */
+#resume{
+    background:#e2e2e2;
+    padding:60px 0;
+    text-align:center;
+}
+
+#resume h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.btn{
+    display:inline-block;
+    background:#333;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-size:18px;
+}
+
+.btn:hover{
+    background:#555;
+}
+
+/* Contact Section */
+#contact{
+    background:white;
+    padding:60px 0;
+    text-align:center;
+}
+
+#contact h2{
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+#contact p{
+    font-size:18px;
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <h1>MALKA SARKAR</h1>
+        <p>STUDENT</p>
+    </div>
+</header>
+
+<!-- About -->
+<section id="about">
+    <div class="container about-content">
+
+        <img src="malka.jpeg.jpeg" alt="Profile Picture">
+
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Malka Sarkar, currently studying in KC College.
+                I am pursuing a degree in Information Technology and I am passionate about web development.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+
+    <div class="container">
+
+        <h2>Skills</h2>
+
+        <ul class="skills-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Responsive Design</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- Education (REPLACED PROJECTS) -->
+<section id="education">
+
+    <div class="container">
+
+        <h2>Education</h2>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>B.Sc. Information Technology</h3>
+                <p>KC College, Mumbai</p>
+                <p>Currently in Third Year</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Higher Secondary (HSC)</h3>
+                <p>SHETH VIDYA MANDIR</p>
+                <p>Completed in 2024</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Secondary (CBSE)</h3>
+                <p>RAHUL INTERNATIONAL SCHOOL</p>
+                <p>Completed in 2023</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Resume -->
+<section id="resume">
+
+    <div class="container">
+
+        <h2>Resume</h2>
+
+        <a href="malka.pdf.pdf" class="btn" download>
+            Download Resume
+        </a>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+    <div class="container">
+
+        <h2>Contact Me</h2>
+
+        <p>Email: malkasarkar09@email.com</p>
+        <p>Phone: +91 8850935514</p>
+        <p>Location: Maharashtra, India</p>
+
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Malka Sarkar | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
